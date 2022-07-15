@@ -92,7 +92,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.885
+    - _Alpha: 0.771
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -105,28 +105,28 @@ Material:
     - _DstBlend: 0
     - _EnvironmentReflections: 1
     - _Foam_Cuttoff: 1
-    - _Foam_Size: 156.97
+    - _Foam_Size: 400
     - _Foam_Speed: 0.001
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
     - _OcclusionStrength: 1
-    - _Offset: -1.63
+    - _Offset: -1.5
     - _Parallax: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _Ripple_Density: 20
     - _Ripple_Speed: 0.5
-    - _Slimness: 4.42
+    - _Slimness: 2.53
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
-    - _Wave_Height: 0.06
-    - _Wave_Speed: 0.13
+    - _Wave_Height: 0.07
+    - _Wave_Speed: 0.05
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
