@@ -2,7 +2,10 @@ fileFormatVersion: 2
 guid: dcf65c1787502684eb0ab06234ec9e70
 ModelImporter:
   serializedVersion: 21300
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: -3023240426140549320
+    second: Frog Armature|Mouth Open
   externalObjects: {}
   materials:
     materialImportMode: 0
