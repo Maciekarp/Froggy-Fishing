@@ -6,6 +6,42 @@ ModelImporter:
   - first:
       74: -3023240426140549320
     second: Frog Armature|Mouth Open
+  - first:
+      74: -5483522868520073274
+    second: Frog Armature|Cast Rod
+  - first:
+      74: -3223798400533090262
+    second: Frog Armature|Casting to Idle Fishing
+  - first:
+      74: 2531036216780818247
+    second: Frog Armature|Caught
+  - first:
+      74: 9165222426687121207
+    second: Frog Armature|Idle
+  - first:
+      74: 838930883155728906
+    second: Frog Armature|Idle Fishing
+  - first:
+      74: 7110127994854254047
+    second: Frog Armature|Idle Pulled Back
+  - first:
+      74: -2728427998378325341
+    second: Frog Armature|Missed
+  - first:
+      74: 1876105644402053648
+    second: Frog Armature|Pulling Back
+  - first:
+      74: -7396709713529788880
+    second: Frog Armature|Reeling
+  - first:
+      74: -9194855388247213706
+    second: Frog Armature|Return From Caught
+  - first:
+      74: 6234199978049725769
+    second: Frog Armature|Z.001
+  - first:
+      74: -6998546436032775974
+    second: Frog Armature|A Default Pose
   externalObjects: {}
   materials:
     materialImportMode: 0

@@ -1,0 +1,248 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Frog Armature_Mouth Open
+  serializedVersion: 6
+  m_Legacy: 0
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.53580517, y: 0.49592698, z: 0.38628623, w: 0.56369525}
+        inSlope: {x: 0.9510405, y: 0.6389766, z: -0.6856477, w: 0.72629356}
+        outSlope: {x: 0.9510405, y: 0.6389766, z: -0.6856477, w: 0.72629356}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.083333336
+        value: {x: -0.4701008, y: 0.5383011, z: 0.33891708, w: 0.61185974}
+        inSlope: {x: 0.51653266, y: 0.30375338, z: -0.37239146, w: 0.3452611}
+        outSlope: {x: 0.51653266, y: 0.30375338, z: -0.37239146, w: 0.3452611}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.2916667
+        value: {x: -0.4217987, y: 0.5640449, z: 0.3032434, w: 0.64185876}
+        inSlope: {x: 0.0760753, y: 0.035016768, z: -0.07335304, w: 0.054129116}
+        outSlope: {x: 0.0760753, y: 0.035016768, z: -0.07335304, w: 0.054129116}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833334
+        value: {x: -0.45065793, y: 0.54921645, z: 0.32489982, w: 0.6242666}
+        inSlope: {x: -0.37303603, y: -0.20439443, z: 0.26823744, w: -0.23287877}
+        outSlope: {x: -0.37303603, y: -0.20439443, z: 0.26823744, w: -0.23287877}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.6666667
+        value: {x: -0.49617848, y: 0.522551, z: 0.35771757, w: 0.5939575}
+        inSlope: {x: -0.8022598, y: -0.5164702, z: 0.5783849, w: -0.58704585}
+        outSlope: {x: -0.8022598, y: -0.5164702, z: 0.5783849, w: -0.58704585}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.7083334
+        value: {x: -0.53580517, y: 0.49592698, z: 0.38628623, w: 0.56369525}
+        inSlope: {x: -0.95104, y: -0.6389763, z: 0.6856474, w: -0.7262932}
+        outSlope: {x: -0.95104, y: -0.6389763, z: 0.6856474, w: -0.7262932}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Neck Bone.C/Head
+      Bone.C
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.049876764, y: -0.049758315, z: 0.0023369244, w: 0.9975124}
+        inSlope: {x: -2.576227, y: 0.00042968988, z: -0.12071069, w: -0.009801865}
+        outSlope: {x: -2.576227, y: 0.00042968988, z: -0.12071069, w: -0.009801865}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: -0.057466026, y: -0.04974041, z: -0.002692688, w: 0.997104}
+        inSlope: {x: -2.1044784, y: 0.003513649, z: -0.098664485, w: -0.0800364}
+        outSlope: {x: -2.1044784, y: 0.003513649, z: -0.098664485, w: -0.0800364}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.125
+        value: {x: -0.16840076, y: -0.049184505, z: -0.007903546, w: 0.98445904}
+        inSlope: {x: -0.8743342, y: 0.006335333, z: -0.041172102, w: -0.14375782}
+        outSlope: {x: -0.8743342, y: 0.006335333, z: -0.041172102, w: -0.14375782}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.375
+        value: {x: -0.25396973, y: -0.0484086, z: -0.011959005, w: 0.965926}
+        inSlope: {x: 0.008218268, y: -0.00030603976, z: 0.00033496227, w: 0.0021278807}
+        outSlope: {x: 0.008218268, y: -0.00030603976, z: 0.00033496227, w: 0.0021278807}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833334
+        value: {x: -0.17456444, y: -0.049226597, z: -0.008209867, w: 0.9833802}
+        inSlope: {x: 0.9348348, y: -0.007241698, z: 0.04408554, w: 0.15904574}
+        outSlope: {x: 0.9348348, y: -0.007241698, z: 0.04408554, w: 0.15904574}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.6666667
+        value: {x: -0.057465658, y: -0.049849253, z: -0.0026989612, w: 0.99709857}
+        inSlope: {x: 2.1398098, y: -0.0038302375, z: 0.100545004, w: 0.08456107}
+        outSlope: {x: 2.1398098, y: -0.0038302375, z: 0.100545004, w: 0.08456107}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.7083334
+        value: {x: 0.049876478, y: -0.049867205, z: 0.0023423706, w: 0.997507}
+        inSlope: {x: 2.57621, y: -0.00043085197, z: 0.12099191, w: 0.00980186}
+        outSlope: {x: 2.57621, y: -0.00043085197, z: 0.12099191, w: 0.00980186}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Neck Bone.C/Head
+      Bone.C/Mouth Bone.C
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.60424703, y: -0.6883715, z: -0.38807324, w: 0.10212427}
+        inSlope: {x: -0.49115896, y: -0.10270643, z: -0.72438526, w: -0.84185904}
+        outSlope: {x: -0.49115896, y: -0.10270643, z: -0.72438526, w: -0.84185904}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: 0.5837821, y: -0.6926509, z: -0.41825595, w: 0.067046806}
+        inSlope: {x: -2.1430645, y: 8.959103, z: 11.597815, w: 7.095848}
+        outSlope: {x: -2.1430645, y: 8.959103, z: 11.597815, w: 7.095848}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.083333336
+        value: {x: 0.42565832, y: 0.05822044, z: 0.5784113, w: 0.69344497}
+        inSlope: {x: 1.3746136, y: 3.4780703, z: 7.028321, w: 6.0052466}
+        outSlope: {x: 1.3746136, y: 3.4780703, z: 7.028321, w: 6.0052466}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.125
+        value: {x: 0.6983332, y: -0.40281168, z: 0.16743751, w: 0.5674841}
+        inSlope: {x: 3.4830184, y: -6.5330997, z: -6.2603607, w: -2.3470535}
+        outSlope: {x: 3.4830184, y: -6.5330997, z: -6.2603607, w: -2.3470535}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.16666667
+        value: {x: 0.71590984, y: -0.4862045, z: 0.056714587, w: 0.49785718}
+        inSlope: {x: 0.21809718, y: -1.0682029, z: -1.4263054, w: -0.90218556}
+        outSlope: {x: 0.21809718, y: -1.0682029, z: -1.4263054, w: -0.90218556}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.20833334
+        value: {x: 0.716508, y: -0.4918286, z: 0.04857871, w: 0.49230194}
+        inSlope: {x: 0.014355181, y: -0.13497804, z: -0.19526103, w: -0.1333258}
+        outSlope: {x: 0.014355181, y: -0.13497804, z: -0.19526103, w: -0.1333258}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.R/Elbow
+      Bone.R/Forearm Bone.R
+  m_CompressedRotationCurves: []
+  m_EulerCurves: []
+  m_PositionCurves: []
+  m_ScaleCurves: []
+  m_FloatCurves: []
+  m_PPtrCurves: []
+  m_SampleRate: 24
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings: []
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_AdditiveReferencePoseClip: {fileID: 0}
+    m_AdditiveReferencePoseTime: 0
+    m_StartTime: 0
+    m_StopTime: 0.7083334
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_HasAdditiveReferencePose: 0
+    m_LoopTime: 0
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves: []
+  m_EulerEditorCurves: []
+  m_HasGenericRootTransform: 0
+  m_HasMotionFloatCurves: 0
+  m_Events: []
