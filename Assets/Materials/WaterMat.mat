@@ -92,7 +92,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.826
+    - _Alpha: 0.863
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -104,7 +104,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EnvironmentReflections: 1
-    - _Foam_Cuttoff: 1
+    - _Foam_Cuttoff: 0.968
     - _Foam_Size: 147.5
     - _Foam_Speed: 0.001
     - _GlossMapScale: 0
@@ -125,7 +125,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
-    - _Wave_Height: 0.07
+    - _Wave_Height: 0
     - _Wave_Speed: 0.05
     - _WorkflowMode: 1
     - _ZWrite: 1

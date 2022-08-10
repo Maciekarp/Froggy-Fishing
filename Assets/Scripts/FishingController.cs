@@ -19,6 +19,7 @@ public class FishingController : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+        print(state);
         if(state == "idle") {
             if(Input.GetKeyDown(fishKey)) {
                 frogAnim.SetBool("Casting", true);
@@ -35,7 +36,7 @@ public class FishingController : MonoBehaviour {
             }
 
         } else if(state == "fishing") {
-            frogAnim.SetBool("Casting", false);
+            
             if(Input.GetKeyDown(fishKey)) {
                 frogAnim.SetTrigger("Reel In");
                 state = "reeling";
@@ -49,12 +50,14 @@ public class FishingController : MonoBehaviour {
                     state = "celebrating";
                 }
             } else {
+                frogAnim.SetBool("Casting", false);
                 frogAnim.SetBool("Caught", false);
                 frogAnim.SetTrigger("Pull");
                 state = "idle";
             }
         } else if (state == "celebrating") {
             if(Input.anyKey) {
+                frogAnim.SetBool("Casting", false);
                 frogAnim.SetTrigger("Continue");
                 state = "idle";
             }
