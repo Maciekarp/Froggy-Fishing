@@ -92,7 +92,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.831
+    - _Alpha: 0.826
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -118,7 +118,7 @@ Material:
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _Ripple_Density: 20
-    - _Ripple_Speed: 0.5
+    - _Ripple_Speed: 0.38
     - _Slimness: 2.53
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
