@@ -99,3 +99,8 @@ MonoBehaviour:
   nodeL: {fileID: 0}
   nodeR: {fileID: 0}
   thickness: 0.1
+  stretchX: 0
+  stretchY: 1
+  stretchZ: 0
+  defaultScale: 1
+  rotate: {x: 90, y: 0, z: 0}

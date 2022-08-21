@@ -19,7 +19,7 @@ public class FishingController : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        print(state);
+        //print(state);
         if(state == "idle") {
             if(Input.GetKeyDown(fishKey)) {
                 frogAnim.SetBool("Casting", true);
