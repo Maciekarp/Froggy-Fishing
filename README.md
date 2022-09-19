@@ -1,6 +1,6 @@
 # Froggy Fishing
 
-![](GamePreviews\ScreenShot-Sept-19-2022.PNG)
+<img src = "GamePreviews/ScreenShot-Sept-19-2022.PNG">
 
 This project was developed in Unity version 2021.3.5f1
 
