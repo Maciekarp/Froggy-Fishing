@@ -647,10 +647,10 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Eating
     m_StateMachine: {fileID: -2263034827326870154}
-    m_Mask: {fileID: 0}
+    m_Mask: {fileID: 31900000, guid: 8d0d4cd728ec25c46a20d214b93cddf7, type: 2}
     m_Motions: []
     m_Behaviours: []
-    m_BlendingMode: 1
+    m_BlendingMode: 0
     m_SyncedLayerIndex: -1
     m_DefaultWeight: 0
     m_IKPass: 0
@@ -659,7 +659,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Fishing
     m_StateMachine: {fileID: -7848227088736981266}
-    m_Mask: {fileID: 0}
+    m_Mask: {fileID: 31900000, guid: 231afc841acf573449a2392e23bbe8f3, type: 2}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0

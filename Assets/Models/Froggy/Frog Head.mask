@@ -7,5 +7,254 @@ AvatarMask:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Frog Head
-  m_Mask: 00000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-  m_Elements: []
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Frog Armature
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Foot Target.L
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Foot Target.L/Foot Target.L_end
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Foot Target.R
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Foot Target.R/Foot Target.R_end
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Knee Target.L
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Knee Target.L/Knee Target.L_end
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Knee Target.R
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Knee Target.R/Knee Target.R_end
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.L
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.L/Elbow
+      Bone.L
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.L/Elbow
+      Bone.L/Forearm Bone.L
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.L/Elbow
+      Bone.L/Forearm Bone.L/Hand Bone.L
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.L/Elbow
+      Bone.L/Forearm Bone.L/Hand Bone.L/Index Bone.L
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.L/Elbow
+      Bone.L/Forearm Bone.L/Hand Bone.L/Index Bone.L/Index Tip Bone.L
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.L/Elbow
+      Bone.L/Forearm Bone.L/Hand Bone.L/Index Bone.L/Index Tip Bone.L/Index Tip Bone.L_end
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.L/Elbow
+      Bone.L/Forearm Bone.L/Hand Bone.L/Pinkey Bone.L
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.L/Elbow
+      Bone.L/Forearm Bone.L/Hand Bone.L/Pinkey Bone.L/Pinkey Tip Bone.L
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.L/Elbow
+      Bone.L/Forearm Bone.L/Hand Bone.L/Pinkey Bone.L/Pinkey Tip Bone.L/Pinkey Tip
+      Bone.L_end
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.L/Elbow
+      Bone.L/Forearm Bone.L/Hand Bone.L/Ring Bone.L
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.L/Elbow
+      Bone.L/Forearm Bone.L/Hand Bone.L/Ring Bone.L/Ring Tip Bone.L
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.L/Elbow
+      Bone.L/Forearm Bone.L/Hand Bone.L/Ring Bone.L/Ring Tip Bone.L/Ring Tip Bone.L_end
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.L/Elbow
+      Bone.L/Forearm Bone.L/Hand Bone.L/Thumb Bone.L
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.L/Elbow
+      Bone.L/Forearm Bone.L/Hand Bone.L/Thumb Bone.L/Thumb Tip Bone.L
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.L/Elbow
+      Bone.L/Forearm Bone.L/Hand Bone.L/Thumb Bone.L/Thumb Tip Bone.L/Thumb Tip Bone.L_end
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.R
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.R/Elbow
+      Bone.R
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.R/Elbow
+      Bone.R/Forearm Bone.R
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.R/Elbow
+      Bone.R/Forearm Bone.R/Hand Bone.R
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.R/Elbow
+      Bone.R/Forearm Bone.R/Hand Bone.R/Index Bone.R
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.R/Elbow
+      Bone.R/Forearm Bone.R/Hand Bone.R/Index Bone.R/Index Tip Bone.R
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.R/Elbow
+      Bone.R/Forearm Bone.R/Hand Bone.R/Index Bone.R/Index Tip Bone.R/Index Tip Bone.R_end
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.R/Elbow
+      Bone.R/Forearm Bone.R/Hand Bone.R/Pinkey Bone.R
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.R/Elbow
+      Bone.R/Forearm Bone.R/Hand Bone.R/Pinkey Bone.R/Pinkey Tip Bone.R
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.R/Elbow
+      Bone.R/Forearm Bone.R/Hand Bone.R/Pinkey Bone.R/Pinkey Tip Bone.R/Pinkey Tip
+      Bone.R_end
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.R/Elbow
+      Bone.R/Forearm Bone.R/Hand Bone.R/Ring Bone.R
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.R/Elbow
+      Bone.R/Forearm Bone.R/Hand Bone.R/Ring Bone.R/Ring Tip Bone.R
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.R/Elbow
+      Bone.R/Forearm Bone.R/Hand Bone.R/Ring Bone.R/Ring Tip Bone.R/Ring Tip Bone.R_end
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.R/Elbow
+      Bone.R/Forearm Bone.R/Hand Bone.R/Thumb Bone.R
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.R/Elbow
+      Bone.R/Forearm Bone.R/Hand Bone.R/Thumb Bone.R/Thumb Tip Bone.R
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Arm Bone.R/Elbow
+      Bone.R/Forearm Bone.R/Hand Bone.R/Thumb Bone.R/Thumb Tip Bone.R/Thumb Tip Bone.R_end
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Elbow Target.L
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Elbow Target.L/Elbow
+      Target.L_end
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Elbow Target.R
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Elbow Target.R/Elbow
+      Target.R_end
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Hand Target.L
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Hand Target.L/Hand
+      Target.L_end
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Hand Target.R
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Hand Target.R/Hand
+      Target.R_end
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Neck Bone.C
+    m_Weight: 1
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Neck Bone.C/Head
+      Bone.C
+    m_Weight: 1
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Neck Bone.C/Head
+      Bone.C/Eye Bone.L
+    m_Weight: 1
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Neck Bone.C/Head
+      Bone.C/Eye Bone.L/Eye Bone.L_end
+    m_Weight: 1
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Neck Bone.C/Head
+      Bone.C/Eye Bone.R
+    m_Weight: 1
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Neck Bone.C/Head
+      Bone.C/Eye Bone.R/Eye Bone.R_end
+    m_Weight: 1
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Neck Bone.C/Head
+      Bone.C/Mouth Bone.C
+    m_Weight: 1
+  - m_Path: Frog Armature/Base Bone.C/Stomach Bone.C/Shoulders Bone.C/Neck Bone.C/Head
+      Bone.C/Mouth Bone.C/Mouth Bone.C_end
+    m_Weight: 1
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.L
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.L/Knee Bone.L
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.L/Knee Bone.L/Shin Bone.L
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.L/Knee Bone.L/Shin Bone.L/Foot Bone.L
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.L/Knee Bone.L/Shin Bone.L/Foot Bone.L/Foot
+      Index Bone.L
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.L/Knee Bone.L/Shin Bone.L/Foot Bone.L/Foot
+      Index Bone.L/Foot Index Tip Bone.L
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.L/Knee Bone.L/Shin Bone.L/Foot Bone.L/Foot
+      Index Bone.L/Foot Index Tip Bone.L/Foot Index Tip Bone.L_end
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.L/Knee Bone.L/Shin Bone.L/Foot Bone.L/Foot
+      Pinkey Bone.L
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.L/Knee Bone.L/Shin Bone.L/Foot Bone.L/Foot
+      Pinkey Bone.L/Foot Pinkey Tip Bone.L
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.L/Knee Bone.L/Shin Bone.L/Foot Bone.L/Foot
+      Pinkey Bone.L/Foot Pinkey Tip Bone.L/Foot Pinkey Tip Bone.L_end
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.L/Knee Bone.L/Shin Bone.L/Foot Bone.L/Foot
+      Ring Bone.L
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.L/Knee Bone.L/Shin Bone.L/Foot Bone.L/Foot
+      Ring Bone.L/Foot Ring Tip Bone.L
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.L/Knee Bone.L/Shin Bone.L/Foot Bone.L/Foot
+      Ring Bone.L/Foot Ring Tip Bone.L/Foot Ring Tip Bone.L_end
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.L/Knee Bone.L/Shin Bone.L/Foot Bone.L/Foot
+      Thumb Bone.L
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.L/Knee Bone.L/Shin Bone.L/Foot Bone.L/Foot
+      Thumb Bone.L/Foot Thumb Bone.L_end
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.R
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.R/Knee Bone.R
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.R/Knee Bone.R/Shin Bone.R
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.R/Knee Bone.R/Shin Bone.R/Foot Bone.R
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.R/Knee Bone.R/Shin Bone.R/Foot Bone.R/Foot
+      Index Bone.R
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.R/Knee Bone.R/Shin Bone.R/Foot Bone.R/Foot
+      Index Bone.R/Foot Index Tip Bone.R
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.R/Knee Bone.R/Shin Bone.R/Foot Bone.R/Foot
+      Index Bone.R/Foot Index Tip Bone.R/Foot Index Tip Bone.R_end
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.R/Knee Bone.R/Shin Bone.R/Foot Bone.R/Foot
+      Pinkey Bone.R
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.R/Knee Bone.R/Shin Bone.R/Foot Bone.R/Foot
+      Pinkey Bone.R/Foot Pinkey Tip Bone.R
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.R/Knee Bone.R/Shin Bone.R/Foot Bone.R/Foot
+      Pinkey Bone.R/Foot Pinkey Tip Bone.R/Foot Pinkey Tip Bone.R_end
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.R/Knee Bone.R/Shin Bone.R/Foot Bone.R/Foot
+      Ring Bone.R
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.R/Knee Bone.R/Shin Bone.R/Foot Bone.R/Foot
+      Ring Bone.R/Foot Ring Tip Bone.R
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.R/Knee Bone.R/Shin Bone.R/Foot Bone.R/Foot
+      Ring Bone.R/Foot Ring Tip Bone.R/Foot Ring Tip Bone.R_end
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.R/Knee Bone.R/Shin Bone.R/Foot Bone.R/Foot
+      Thumb Bone.R
+    m_Weight: 0
+  - m_Path: Frog Armature/Base Bone.C/Thigh Bone.R/Knee Bone.R/Shin Bone.R/Foot Bone.R/Foot
+      Thumb Bone.R/Foot Thumb Bone.R_end
+    m_Weight: 0
+  - m_Path: Frog Joined
+    m_Weight: 1
