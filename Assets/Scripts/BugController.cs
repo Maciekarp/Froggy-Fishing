@@ -16,8 +16,8 @@ public class BugController : MonoBehaviour
     // Chase target follows and rotates towards the target gameobject
     private void ChaseTarget() {
         Vector3 targetDir = (bugTarget.transform.position - transform.position).normalized;
-        Quaternion lookRotation = Quaternion.LookRotation(targetDir, Vector3.up);
         if((bugTarget.transform.position - transform.position).magnitude > 0.1f) {
+            Quaternion lookRotation = Quaternion.LookRotation(targetDir, Vector3.up);
             transform.position = transform.position + targetDir * Time.deltaTime * speed;
                 transform.rotation = Quaternion.Lerp(transform.rotation, lookRotation, Time.deltaTime * rotateSpeed);
         }
