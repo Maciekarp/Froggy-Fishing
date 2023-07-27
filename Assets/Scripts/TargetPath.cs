@@ -28,7 +28,7 @@ public class TargetPath : MonoBehaviour {
     }
     */
 
-    [SerializeField] private Collider box;
+    [SerializeField] public Collider box;
     [SerializeField] private Transform bugTransform;
     [SerializeField] private float distance = 1f;
 

@@ -6,6 +6,9 @@ public class BugController : MonoBehaviour
 {
     [SerializeField] private Animator anim;
 
+    [SerializeField] private Rigidbody flyRig;
+    [SerializeField] private float pullForce = 1f;
+
     [SerializeField] private string bugType;
     [SerializeField] private GameObject bugParent;
     [SerializeField] private GameObject bugTarget;
@@ -16,10 +19,17 @@ public class BugController : MonoBehaviour
     // Chase target follows and rotates towards the target gameobject
     private void ChaseTarget() {
         Vector3 targetDir = (bugTarget.transform.position - transform.position).normalized;
+        
+        
         if((bugTarget.transform.position - transform.position).magnitude > 0.1f) {
-            Quaternion lookRotation = Quaternion.LookRotation(targetDir, Vector3.up);
-            transform.position = transform.position + targetDir * Time.deltaTime * speed;
-                transform.rotation = Quaternion.Lerp(transform.rotation, lookRotation, Time.deltaTime * rotateSpeed);
+            
+            flyRig.AddForce(targetDir * pullForce);
+            
+            //transform.position = transform.position + targetDir * Time.deltaTime * speed;
+            
+            // Sets the look dir of the fly
+            Quaternion lookRotation = Quaternion.LookRotation(flyRig.velocity, Vector3.up); 
+            transform.rotation = Quaternion.Lerp(transform.rotation, lookRotation, Time.deltaTime * rotateSpeed);
         }
     }
 
