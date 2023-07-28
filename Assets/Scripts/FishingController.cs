@@ -7,6 +7,8 @@ public class FishingController : MonoBehaviour {
     [SerializeField] private KeyCode fishKey;
     [SerializeField] private KeyCode resetKey;
     [SerializeField] private float reelTime;    // Time to reel in seconds
+    
+    [SerializeField] private BobberMovement bobber;
 
     private string state = "idle";
     private float reelStart;
@@ -28,10 +30,12 @@ public class FishingController : MonoBehaviour {
         } else if(state == "casting") {
             if(Input.GetKeyDown(resetKey)) {
                 frogAnim.SetBool("Casting", false);
+                
                 state = "idle";
             }
             if(Input.GetKeyUp(fishKey)) {
                 frogAnim.SetTrigger("Cast");
+                bobber.StartThrow();
                 state = "fishing";
             }
 
