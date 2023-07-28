@@ -12,7 +12,6 @@ public class BugController : MonoBehaviour
     [SerializeField] private string bugType;
     [SerializeField] private GameObject bugParent;
     [SerializeField] private GameObject bugTarget;
-    [SerializeField] private float speed = 10;
     [SerializeField] private float rotateSpeed = 10;
     
 
@@ -28,8 +27,10 @@ public class BugController : MonoBehaviour
             //transform.position = transform.position + targetDir * Time.deltaTime * speed;
             
             // Sets the look dir of the fly
-            Quaternion lookRotation = Quaternion.LookRotation(flyRig.velocity, Vector3.up); 
-            transform.rotation = Quaternion.Lerp(transform.rotation, lookRotation, Time.deltaTime * rotateSpeed);
+            if(flyRig.velocity != Vector3.zero) {
+                Quaternion lookRotation = Quaternion.LookRotation(flyRig.velocity, Vector3.up); 
+                transform.rotation = Quaternion.Lerp(transform.rotation, lookRotation, Time.deltaTime * rotateSpeed);
+            }
         }
     }
 

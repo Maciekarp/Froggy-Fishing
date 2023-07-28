@@ -33,30 +33,55 @@ public class AimController : MonoBehaviour {
 
     // Update is called once per frame
     void Update() { 
+        
+
         // Raycasts from the camera to the location the mouse is
         // intersecting position is where aimTransform is placed
         Ray pointRay = Camera.main.ScreenPointToRay(Input.mousePosition);
         if(!eating) {
-            if (Physics.Raycast(pointRay, out RaycastHit hit, 100)) {
-                Vector3 lookLocation = (
-                    hit.transform.gameObject.GetComponent<BugController>() != null ? hit.transform.gameObject.transform.position : hit.point
-                );
-
-                aimTransform.position = lookSpeed * (lookLocation - aimTransform.position) + aimTransform.position;
-                //print(hit.transform.name);
-            }
-            //aimTransform.position = 
-            if(Input.GetMouseButtonDown(0)) {
-                frogAnim.SetTrigger("Eating");
-                eating = true;
-                bugCont = hit.transform.gameObject.GetComponent<BugController>();
-                if(bugCont != null) {
-                    bugCaught = hit.transform.gameObject;
-                } else {
-                    bugCaught = null;
+            RaycastHit[] hits;
+            hits = Physics.RaycastAll(pointRay);
+            if(hits.Length >0 ){
+                
+                RaycastHit bestHit = hits[0];
+                // loops throught all the collider hits to find the most optimal one
+                foreach (RaycastHit hit in hits) {
+                    if (bestHit.transform.gameObject.GetComponent<BugController>() != null){
+                        if(hit.transform.gameObject.GetComponent<BugController>() != null) {
+                            bestHit = (hit.distance < bestHit.distance ? hit : bestHit);
+                        }
+                    } else {
+                        if(hit.transform.gameObject.GetComponent<BugController>() != null) {
+                            bestHit = hit;
+                        } else {
+                            bestHit = (hit.distance < bestHit.distance ? hit : bestHit);
+                        }
+                    }
                 }
-                startTime = Time.time;
+
+                // Has the frog look at the hit object
+                Vector3 lookLocation = (
+                    bestHit.transform.gameObject.GetComponent<BugController>() != null ? bestHit.transform.position : bestHit.point
+                );
+                // Moves the aim to the look position
+                aimTransform.position = lookSpeed * (lookLocation - aimTransform.position) + aimTransform.position;
+
+
+                
+                if(Input.GetMouseButtonDown(0)) {
+                    frogAnim.SetTrigger("Eating");
+                    eating = true;
+                    bugCont = bestHit.transform.gameObject.GetComponent<BugController>();
+                    if(bugCont != null) {
+                        bugCaught = bestHit.transform.gameObject;
+                    } else {
+                        bugCaught = null;
+                    }
+                    startTime = Time.time;
+                }
             }
+
+            
         } else {
             // if eating do the tongue shoot out animation
             tongueEnd.position = 
