@@ -11,9 +11,13 @@ public class BobberMovement : MonoBehaviour
     [SerializeField] private float throwForce = 1f;
     [SerializeField] private float reelSpeed = 1f;
     [SerializeField] private float castDelay = 0.5f;
-
+    [SerializeField] private float floatHeight = 10f;
+    [SerializeField] private AnimationCurve floatCurve;
+    [SerializeField] private float loopTime = 3f;
+    [SerializeField] private float floatStrength = 1f;
     private Vector3 prevPos;
     private Vector3 push;
+    private float startFloatTime;
     public string bobberState = "reeled";
 
     // Used by Animator to throw the bobber
@@ -34,6 +38,7 @@ public class BobberMovement : MonoBehaviour
 
     public void ReelIn() {
         bobberState = "reeling";
+        bobberRb.drag = 0.17f;
         bobberRb.useGravity = false;
     }
 
@@ -62,6 +67,20 @@ public class BobberMovement : MonoBehaviour
             bobberRb.AddForce(push* 100);
             Debug.Log(push);
             bobberState = "floating";
+        }
+        if(bobberState == "floating") {
+            if(transform.position.y < floatHeight && bobberRb.useGravity) {
+                bobberRb.useGravity = false;
+                bobberRb.drag = 5f;
+                bobberRb.velocity = new Vector3(bobberRb.velocity.x, 0, bobberRb.velocity.z);
+                startFloatTime = Time.time;
+            }
+            if(!bobberRb.useGravity) {
+                transform.position = Vector3.Lerp(transform.position, new Vector3(
+                    transform.position.x, 
+                    floatHeight + 1 + (floatCurve.Evaluate((Time.time - startFloatTime) % loopTime) * floatStrength),
+                    transform.position.z), 0.1f);
+            }
         }
     }
 }

@@ -1385,10 +1385,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rodTip: {fileID: 1409420402}
   bobberRb: {fileID: 433273924}
-  orthStrength: 0.1
-  throwForce: 5
+  orthStrength: 0.36
+  throwForce: 5.95
   reelSpeed: 100
-  castDelay: 0.38
+  castDelay: 0.3
+  floatHeight: 9.75
+  floatCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -0.5
+      value: -0.99998474
+      inSlope: -0.003521425
+      outSlope: -0.003521425
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 1
+    - serializedVersion: 3
+      time: 0
+      value: 0.99999607
+      inSlope: 0.0076778377
+      outSlope: 0.0076778377
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.9046931
+    - serializedVersion: 3
+      time: 0.5
+      value: -1
+      inSlope: 0.0040863575
+      outSlope: 0.0040863575
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 1
+      outWeight: 0
+    m_PreInfinity: 1
+    m_PostInfinity: 1
+    m_RotationOrder: 4
+  loopTime: 3
+  floatStrength: 0.09
   bobberState: reeled
 --- !u!114 &433273922
 MonoBehaviour:
