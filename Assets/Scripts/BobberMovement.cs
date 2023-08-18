@@ -78,7 +78,7 @@ public class BobberMovement : MonoBehaviour
             if(!bobberRb.useGravity) {
                 transform.position = Vector3.Lerp(transform.position, new Vector3(
                     transform.position.x, 
-                    floatHeight + 1 + (floatCurve.Evaluate((Time.time - startFloatTime) % loopTime) * floatStrength),
+                    floatHeight + 1 + (floatCurve.Evaluate((Time.time - startFloatTime) / loopTime) * floatStrength),
                     transform.position.z), 0.1f);
             }
         }

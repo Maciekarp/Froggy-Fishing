@@ -24,21 +24,14 @@ public class AimController : MonoBehaviour {
     private BugController bugCont = null;
     private float startTime;
 
-    //private Vector3 prevAimPos;
-
-    // Start is called before the first frame update
-    void Start() {
-        
-    }
+    public bool canEat = false;
 
     // Update is called once per frame
     void Update() { 
-        
-
         // Raycasts from the camera to the location the mouse is
         // intersecting position is where aimTransform is placed
         Ray pointRay = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if(!eating) {
+        if(!eating && canEat) {
             RaycastHit[] hits;
             hits = Physics.RaycastAll(pointRay);
             if(hits.Length >0 ){
@@ -80,8 +73,6 @@ public class AimController : MonoBehaviour {
                     startTime = Time.time;
                 }
             }
-
-            
         } else {
             // if eating do the tongue shoot out animation
             tongueEnd.position = 
