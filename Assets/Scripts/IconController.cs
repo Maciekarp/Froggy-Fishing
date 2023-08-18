@@ -71,6 +71,7 @@ public class IconController : MonoBehaviour {
 
         // Face camera at all times
         Vector3 dir = mainCamera.transform.position - transform.position;
-        transform.rotation = mainCamera.transform.rotation * Quaternion.Euler(0, 90, 0);
+        transform.rotation = Quaternion.LookRotation(dir, Vector3.up) * Quaternion.Euler(0, 90, 0);
+        //transform.rotation = mainCamera.transform.rotation * Quaternion.Euler(0, 90, 0);
     }
 }

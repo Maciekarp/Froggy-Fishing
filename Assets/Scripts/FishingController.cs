@@ -14,6 +14,8 @@ public class FishingController : MonoBehaviour {
     [SerializeField] private float transitionTime = 0.5f;
 
     [SerializeField] private AimController aimController;
+    
+    [SerializeField] private CameraMovement camMov;
 
     private string state = "idle";
     private float reelStart;
@@ -66,6 +68,7 @@ public class FishingController : MonoBehaviour {
                     frogAnim.SetTrigger("Pull");
                     frogAnim.SetTrigger("PullHead");
                     state = "celebrating";
+                    camMov.StartCelebrate();
                 }
             } else {
                 frogAnim.SetBool("Casting", false);
@@ -81,6 +84,7 @@ public class FishingController : MonoBehaviour {
                 frogAnim.SetTrigger("ContinueHead");
                 state = "idle";
                 transitionStart = Time.time;
+                camMov.StopCelebrate();
             }
         }
     }
