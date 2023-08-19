@@ -30,6 +30,7 @@ public class IconController : MonoBehaviour {
     }
 
     void Start() {
+        Debug.Log("Celebrate created");
         mainCamera = Camera.main; // Initializes Camera to look at
 
 

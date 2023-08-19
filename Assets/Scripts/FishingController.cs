@@ -23,6 +23,7 @@ public class FishingController : MonoBehaviour {
 
     private float transitionStart = -10f;
 
+
     void Update() {
 
         // transitions the rig that controls aim head between on and off

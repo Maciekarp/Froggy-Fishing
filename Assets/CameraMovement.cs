@@ -10,13 +10,19 @@ public class CameraMovement : MonoBehaviour
     
     [SerializeField] private AnimationCurve cameraMovement;
     
+    [SerializeField] private GameObject celebratePrefab;
+    [SerializeField] private Transform celebrateSpawnPos;
+
     private Vector3 startPos;
     private Vector3 endPos;
     private Quaternion startRot;
     private Quaternion endRot;
     private float startMoveTime = -50;
 
+    private GameObject currCelebrate;
+
     public void StartCelebrate() {
+        currCelebrate = Instantiate(celebratePrefab, celebrateSpawnPos.transform.position, Quaternion.identity);
         startMoveTime = Time.time;
         startPos = defaultPosTrans.position;
         endPos = celebratePosTrans.position;
@@ -25,6 +31,7 @@ public class CameraMovement : MonoBehaviour
     }
 
     public void StopCelebrate() {
+        currCelebrate.GetComponent<IconController>().KillIcon();
         startMoveTime = Time.time;
         startPos = celebratePosTrans.position;
         endPos = defaultPosTrans.position;
