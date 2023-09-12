@@ -116,7 +116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 6301472525536403823}
   flyRig: {fileID: 6316503808388893918}
-  pullForce: 50
+  pullForce: 30
   bugType: Fly
   bugParent: {fileID: 6649202064559358729}
   bugTarget: {fileID: 7466456072630303266}

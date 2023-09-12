@@ -18,11 +18,14 @@ public class BugsManager : MonoBehaviour
         );
         GameObject newFly = Instantiate(flyPrefab, spawnPoint, Quaternion.identity); 
         TargetPath targetP = newFly.GetComponentInChildren<TargetPath>();
+        newFly.transform.SetParent(transform, true);
         targetP.box = flyBox;
     }
 
     // Update is called once per frame
     void Update() {
         if(Input.GetMouseButtonDown(1)) spawnFly();
+        if(transform.childCount < 8) spawnFly();
+        
     }
 }

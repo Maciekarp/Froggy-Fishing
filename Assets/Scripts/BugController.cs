@@ -7,7 +7,7 @@ public class BugController : MonoBehaviour
     [SerializeField] private Animator anim;
 
     [SerializeField] private Rigidbody flyRig;
-    [SerializeField] private float pullForce = 1f;
+    [SerializeField] private float pullForce = 30f;
 
     [SerializeField] private string bugType;
     [SerializeField] private GameObject bugParent;
@@ -22,7 +22,7 @@ public class BugController : MonoBehaviour
         
         if((bugTarget.transform.position - transform.position).magnitude > 0.1f) {
             
-            flyRig.AddForce(targetDir * pullForce);
+            flyRig.AddForce(targetDir * pullForce * 100f * Time.deltaTime);
             
             //transform.position = transform.position + targetDir * Time.deltaTime * speed;
             

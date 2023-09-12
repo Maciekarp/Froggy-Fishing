@@ -17,6 +17,11 @@ public class FishingController : MonoBehaviour {
     
     [SerializeField] private CameraMovement camMov;
 
+    [SerializeField] private GameObject[] fishPrefabs;
+    
+    [SerializeField] private StringMaster strings;
+    [SerializeField] private GameObject fishOnHook;
+
     private string state = "idle";
     private float reelStart;
     private bool caught = true;
@@ -33,7 +38,7 @@ public class FishingController : MonoBehaviour {
         aimController.canEat = false;
         }
         if(state == "idle") {
-            headRig.weight = (Time.time - transitionStart)>= transitionTime ? 1f : ((Time.time - transitionStart) / transitionTime);
+            headRig.weight = (Time.time - transitionStart - 1f)>= transitionTime ? 1f : ((Time.time - transitionStart) / transitionTime - 1);
             aimController.canEat = true;
         }
 
@@ -41,16 +46,18 @@ public class FishingController : MonoBehaviour {
             if(Input.GetKeyDown(fishKey)) {
                 frogAnim.SetBool("Casting", true);
                 state = "casting";
+                strings.sag = 0f;
             }
         } else if(state == "casting") {
             if(Input.GetKeyDown(resetKey)) {
                 frogAnim.SetBool("Casting", false);
-                
+                strings.sag = 0.2f;
                 state = "idle";
             }
             if(Input.GetKeyUp(fishKey)) {
                 frogAnim.SetTrigger("Cast");
                 bobber.StartThrow();
+                strings.sag = 0.2f;
                 state = "fishing";
             }
 
@@ -58,6 +65,7 @@ public class FishingController : MonoBehaviour {
             
             if(Input.GetKeyDown(fishKey)) {
                 frogAnim.SetTrigger("Reel In");
+                strings.sag = 0f;
                 state = "reeling";
                 reelStart = Time.time;
                 transitionStart = Time.time;
@@ -65,21 +73,27 @@ public class FishingController : MonoBehaviour {
         } else if(state == "reeling") {
             if(caught) {
                 frogAnim.SetBool("Caught", true);
+                fishOnHook.SetActive(true);
                 if(Time.time - reelStart >= reelTime) {
                     frogAnim.SetTrigger("Pull");
+                    bobber.ReelIn();
+                    strings.sag = 0.2f;
                     frogAnim.SetTrigger("PullHead");
                     state = "celebrating";
-                    camMov.StartCelebrate();
+                    camMov.StartCelebrate(fishPrefabs[0]);
                 }
             } else {
                 frogAnim.SetBool("Casting", false);
                 frogAnim.SetBool("Caught", false);
                 frogAnim.SetTrigger("Pull");
+                bobber.ReelIn();
+                strings.sag = 0.2f;
                 state = "idle";
                 transitionStart = Time.time;
             }
         } else if (state == "celebrating") {
             if(Input.anyKey) {
+                fishOnHook.SetActive(false);
                 frogAnim.SetBool("Casting", false);
                 frogAnim.SetTrigger("Continue");
                 frogAnim.SetTrigger("ContinueHead");

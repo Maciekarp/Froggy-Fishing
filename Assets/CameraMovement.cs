@@ -13,6 +13,7 @@ public class CameraMovement : MonoBehaviour
     [SerializeField] private GameObject celebratePrefab;
     [SerializeField] private Transform celebrateSpawnPos;
 
+
     private Vector3 startPos;
     private Vector3 endPos;
     private Quaternion startRot;
@@ -20,9 +21,12 @@ public class CameraMovement : MonoBehaviour
     private float startMoveTime = -50;
 
     private GameObject currCelebrate;
+    private GameObject currCaughtFish;
 
-    public void StartCelebrate() {
+    // Creates celebration and fish objects and brings the 
+    public void StartCelebrate(GameObject caughtFishPrefab) {
         currCelebrate = Instantiate(celebratePrefab, celebrateSpawnPos.transform.position, Quaternion.identity);
+        Instantiate(caughtFishPrefab, currCelebrate.transform);
         startMoveTime = Time.time;
         startPos = defaultPosTrans.position;
         endPos = celebratePosTrans.position;

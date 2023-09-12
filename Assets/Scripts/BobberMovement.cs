@@ -13,12 +13,19 @@ public class BobberMovement : MonoBehaviour
     [SerializeField] private float castDelay = 0.5f;
     [SerializeField] private float floatHeight = 10f;
     [SerializeField] private AnimationCurve floatCurve;
+    [SerializeField] private AnimationCurve eatCurve;
+    [SerializeField] private float biteDepth = 1f;
+    [SerializeField] private float biteLength = 0.5f;
+    [SerializeField] private float biteHold = 0.5f;
+    private float startBite = -10f;
+    private bool isTease = true;
     [SerializeField] private float loopTime = 3f;
     [SerializeField] private float floatStrength = 1f;
     private Vector3 prevPos;
     private Vector3 push;
     private float startFloatTime;
     public string bobberState = "reeled";
+
 
     // Used by Animator to throw the bobber
     public void StartThrow() {
@@ -69,6 +76,25 @@ public class BobberMovement : MonoBehaviour
             bobberState = "floating";
         }
         if(bobberState == "floating") {
+            // set bite time if its not in the future
+            if(Time.time > startBite + biteLength + 1f) {
+                isTease = Random.Range(0f, 10f) < 7f;
+                startBite = Time.time + Random.Range(5f, 30f);
+                
+            }
+            float biteDelta;
+            if(!isTease) {
+                if(Time.time - startBite < biteLength / 2) {
+                    biteDelta = (biteDepth * eatCurve.Evaluate((Time.time - startBite ) / biteLength));
+                } else if(Time.time - startBite - biteLength / 2 < biteHold) {
+                    biteDelta = -1f;
+                } else{
+                    biteDelta = (biteDepth * eatCurve.Evaluate((Time.time - startBite - biteHold) / biteLength));
+                }
+            } else {
+                biteDelta = (biteDepth * eatCurve.Evaluate((Time.time - startBite ) / biteLength));
+            }
+            biteDelta = isTease ? 0.5f * biteDelta : biteDelta;
             if(transform.position.y < floatHeight && bobberRb.useGravity) {
                 bobberRb.useGravity = false;
                 bobberRb.drag = 5f;
@@ -78,7 +104,7 @@ public class BobberMovement : MonoBehaviour
             if(!bobberRb.useGravity) {
                 transform.position = Vector3.Lerp(transform.position, new Vector3(
                     transform.position.x, 
-                    floatHeight + 1 + (floatCurve.Evaluate((Time.time - startFloatTime) / loopTime) * floatStrength),
+                    biteDelta + floatHeight + 1 + (floatCurve.Evaluate((Time.time - startFloatTime) / loopTime) * floatStrength),
                     transform.position.z), 0.1f);
             }
         }
