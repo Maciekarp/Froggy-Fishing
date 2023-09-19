@@ -26,13 +26,30 @@ public class BobberMovement : MonoBehaviour
     private float startFloatTime;
     public string bobberState = "reeled";
 
+    [SerializeField] private GameObject debugObject;
+
+
+    private bool canCatch = false;
+    private bool isReeling = false;
+
+    public bool GetCanCatch() {
+        
+        isReeling = true;
+        if(canCatch) {
+            startBite = -10f;
+            
+            return true;
+        }
+        return canCatch;
+    }
 
     // Used by Animator to throw the bobber
     public void StartThrow() {
         Invoke("ThrowBobber", castDelay);
+        isReeling = false;
     }
 
-    private void ThrowBobber() {
+    public void ThrowBobber() {
         bobberState = "casting";
         bobberRb.useGravity = true;
 
@@ -47,6 +64,7 @@ public class BobberMovement : MonoBehaviour
         bobberState = "reeling";
         bobberRb.drag = 0.17f;
         bobberRb.useGravity = false;
+        isReeling = false;
     }
 
     // Start is called before the first frame update
@@ -58,6 +76,10 @@ public class BobberMovement : MonoBehaviour
     // Update is called once per frame
     void Update()   
     {
+        
+
+        debugObject.SetActive(canCatch);    
+        canCatch = false;
         if(bobberState == "reeling") {
             Vector3 toTip = (rodTip.transform.position - transform.position);
             if(toTip.magnitude < 0.1f) {
@@ -72,23 +94,28 @@ public class BobberMovement : MonoBehaviour
         }
         if(bobberState == "casting") {
             bobberRb.AddForce(push* 100);
-            Debug.Log(push);
+            //Debug.Log(push);
             bobberState = "floating";
         }
         if(bobberState == "floating") {
             // set bite time if its not in the future
-            if(Time.time > startBite + biteLength + 1f) {
+            if(!isReeling && Time.time > startBite + biteLength + 1f) {
                 isTease = Random.Range(0f, 10f) < 7f;
                 startBite = Time.time + Random.Range(5f, 30f);
                 
             }
             float biteDelta;
             if(!isTease) {
+                
                 if(Time.time - startBite < biteLength / 2) {
+                    if(Time.time > startBite)
+                    canCatch = true;
                     biteDelta = (biteDepth * eatCurve.Evaluate((Time.time - startBite ) / biteLength));
-                } else if(Time.time - startBite - biteLength / 2 < biteHold) {
+                } else if(isReeling || Time.time - startBite - biteLength / 2 < biteHold) {
                     biteDelta = -1f;
+                    canCatch = true;
                 } else{
+                    canCatch = false;
                     biteDelta = (biteDepth * eatCurve.Evaluate((Time.time - startBite - biteHold) / biteLength));
                 }
             } else {

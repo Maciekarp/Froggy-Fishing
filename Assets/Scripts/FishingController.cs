@@ -22,12 +22,14 @@ public class FishingController : MonoBehaviour {
     [SerializeField] private StringMaster strings;
     [SerializeField] private GameObject fishOnHook;
 
+    [SerializeField] private float KeyDelay = 0.2f;
     private string state = "idle";
     private float reelStart;
-    private bool caught = true;
+    private bool caught = false;
 
     private float transitionStart = -10f;
-
+    
+    private float keyPressTime = -10f;
 
     void Update() {
 
@@ -56,7 +58,7 @@ public class FishingController : MonoBehaviour {
             }
             if(Input.GetKeyUp(fishKey)) {
                 frogAnim.SetTrigger("Cast");
-                bobber.StartThrow();
+                //bobber.StartThrow();
                 strings.sag = 0.2f;
                 state = "fishing";
             }
@@ -64,11 +66,13 @@ public class FishingController : MonoBehaviour {
         } else if(state == "fishing") {
             
             if(Input.GetKeyDown(fishKey)) {
+                //Debug.Log("pressed reelin");
                 frogAnim.SetTrigger("Reel In");
                 strings.sag = 0f;
                 state = "reeling";
                 reelStart = Time.time;
                 transitionStart = Time.time;
+                caught = bobber.GetCanCatch();
             }
         } else if(state == "reeling") {
             if(caught) {
@@ -82,14 +86,16 @@ public class FishingController : MonoBehaviour {
                     state = "celebrating";
                     camMov.StartCelebrate(fishPrefabs[0]);
                 }
-            } else {
+            } else if(Time.time - reelStart > 0.5f){
                 frogAnim.SetBool("Casting", false);
                 frogAnim.SetBool("Caught", false);
                 frogAnim.SetTrigger("Pull");
-                bobber.ReelIn();
+                
                 strings.sag = 0.2f;
                 state = "idle";
                 transitionStart = Time.time;
+            } else {
+                bobber.ReelIn();
             }
         } else if (state == "celebrating") {
             if(Input.anyKey) {
