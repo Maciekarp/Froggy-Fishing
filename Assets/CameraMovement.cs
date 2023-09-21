@@ -5,6 +5,7 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour
 {
     [SerializeField] private Transform cameraTrans;
+    [SerializeField] private Transform startPosTrans;
     [SerializeField] private Transform defaultPosTrans;
     [SerializeField] private Transform celebratePosTrans;
     
@@ -43,8 +44,17 @@ public class CameraMovement : MonoBehaviour
         endRot = defaultPosTrans.rotation;
     }
 
+    public void StartGame() {
+        startMoveTime = Time.time;
+        startPos = startPosTrans.position;
+        endPos = defaultPosTrans.position;
+        startRot = startPosTrans.rotation;
+        endRot = defaultPosTrans.rotation;
+    }
+
     // Start is called before the first frame update
     void Start() {
+        /*
         cameraTrans.position = defaultPosTrans.position;
         cameraTrans.rotation = defaultPosTrans.rotation;
         startMoveTime = -50f;
@@ -52,6 +62,15 @@ public class CameraMovement : MonoBehaviour
         endPos = defaultPosTrans.position;
         startRot = celebratePosTrans.rotation;
         endRot = defaultPosTrans.rotation;
+        */
+
+        cameraTrans.position = startPosTrans.position;
+        cameraTrans.rotation = startPosTrans.rotation;
+        startMoveTime = -50f;
+        startPos = celebratePosTrans.position;
+        endPos = startPosTrans.position;
+        startRot = celebratePosTrans.rotation;
+        endRot = startPosTrans.rotation;
     }
 
     // Update is called once per frame

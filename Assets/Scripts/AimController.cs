@@ -26,6 +26,7 @@ public class AimController : MonoBehaviour {
 
     public bool canEat = false;
 
+
     // Update is called once per frame
     void Update() { 
         // Raycasts from the camera to the location the mouse is

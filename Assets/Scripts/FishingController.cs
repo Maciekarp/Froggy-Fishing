@@ -23,13 +23,22 @@ public class FishingController : MonoBehaviour {
     [SerializeField] private GameObject fishOnHook;
 
     [SerializeField] private float KeyDelay = 0.2f;
-    private string state = "idle";
+    private string state = "start";
     private float reelStart;
     private bool caught = false;
 
     private float transitionStart = -10f;
     
     private float keyPressTime = -10f;
+
+    public void StartIdle() {
+        Invoke("StartIdleActually", 0.3f);
+        
+    }
+
+    private void StartIdleActually() {
+        state = "idle";
+    }
 
     void Update() {
 

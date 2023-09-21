@@ -17,7 +17,7 @@ public class ClockController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timeLeft = maxTime - Time.time;
-        hand.transform.eulerAngles = initialRot - new Vector3((timeLeft/60f) * 360f, 0f, 0f);
+        //timeLeft = maxTime - Time.time;
+        hand.transform.eulerAngles = initialRot - new Vector3((timeLeft/maxTime) * 360f, 0f, 0f);
     }
 }
