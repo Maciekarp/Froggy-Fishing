@@ -9,6 +9,8 @@ public class BugsManager : MonoBehaviour
     [SerializeField] private GameObject flyPrefab;
     [SerializeField] private Collider flyBox;
 
+    [SerializeField] private int maxBugs = 6;
+
     private void spawnFly() {
         Collider chosenSpawn = spawnBoxes[Random.Range(0, spawnBoxes.Length)];
         Vector3 spawnPoint = new Vector3(
@@ -25,7 +27,7 @@ public class BugsManager : MonoBehaviour
     // Update is called once per frame
     void Update() {
         if(Input.GetMouseButtonDown(1)) spawnFly();
-        if(transform.childCount < 8) spawnFly();
+        if(transform.childCount < maxBugs) spawnFly();
         
     }
 }

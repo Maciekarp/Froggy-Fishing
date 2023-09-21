@@ -101,7 +101,7 @@ public class BobberMovement : MonoBehaviour
             // set bite time if its not in the future
             if(!isReeling && Time.time > startBite + biteLength + 1f) {
                 isTease = Random.Range(0f, 10f) < 7f;
-                startBite = Time.time + Random.Range(5f, 30f);
+                startBite = Time.time + Random.Range(5f, 20f);
                 
             }
             float biteDelta;

@@ -18,6 +18,9 @@ public class AimController : MonoBehaviour {
 
     [SerializeField] private AnimationCurve tongueCurve;
 
+
+    [SerializeField] private ClockController clock;
+
     private bool eating = false;
     private bool eaten = false;
     private GameObject bugCaught = null;
