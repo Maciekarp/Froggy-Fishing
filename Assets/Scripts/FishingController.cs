@@ -22,6 +22,9 @@ public class FishingController : MonoBehaviour {
     [SerializeField] private StringMaster strings;
     [SerializeField] private GameObject fishOnHook;
 
+    
+    [SerializeField] private ClockController clock;
+
     [SerializeField] private float KeyDelay = 0.2f;
     private string state = "start";
     private float reelStart;
@@ -93,6 +96,7 @@ public class FishingController : MonoBehaviour {
                     strings.sag = 0.2f;
                     frogAnim.SetTrigger("PullHead");
                     state = "celebrating";
+                    clock.StopClock();
                     camMov.StartCelebrate(fishPrefabs[0]);
                 }
             } else if(Time.time - reelStart > 0.5f){
@@ -112,6 +116,7 @@ public class FishingController : MonoBehaviour {
                 frogAnim.SetBool("Casting", false);
                 frogAnim.SetTrigger("Continue");
                 frogAnim.SetTrigger("ContinueHead");
+                clock.StartClock();
                 state = "idle";
                 transitionStart = Time.time;
                 camMov.StopCelebrate();

@@ -96,6 +96,7 @@ public class AimController : MonoBehaviour {
                 eating = false;
                 eaten = false;
                 if(bugCaught != null && bugCont != null) {
+                    clock.AddTime();
                     bugCont.killBug();
                 }
                 tongueEnd.position = tongueBase.position;
