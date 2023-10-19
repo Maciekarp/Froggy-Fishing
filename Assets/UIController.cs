@@ -5,15 +5,41 @@ using UnityEngine;
 public class UIController : MonoBehaviour
 {
     [SerializeField] private ClockController clockCont;
-    [SerializeField] private GameObject buttons;
+    //[SerializeField] private GameObject[] ;
     [SerializeField] private GameObject pauseIcon;
     [SerializeField] private GameObject playIcon;
     [SerializeField] private GameObject pannel;
-    
+    [SerializeField] private GameObject infoBoard;
+
+    [SerializeField] private float rotateSpeed = 100f;
+    private bool uiIsVisible = true;
+
     //private float timePaused = Time.unscaledTime;
 
+
+    void Update() {
+        if(uiIsVisible) {
+            if(infoBoard.transform.localEulerAngles.y <= 0f) {
+                infoBoard.transform.localEulerAngles = new Vector3(0f, 0f, 0f);
+            } else {
+                infoBoard.transform.localEulerAngles = infoBoard.transform.localEulerAngles - (rotateSpeed * Time.unscaledDeltaTime * new Vector3(0f, 1f, 0f));
+            }
+        } else {
+            if(infoBoard.transform.localEulerAngles.y >= 90f) {
+                infoBoard.transform.localEulerAngles = new Vector3(0f, 90f, 0f);
+            } else {
+                infoBoard.transform.localEulerAngles = infoBoard.transform.localEulerAngles + (rotateSpeed * Time.unscaledDeltaTime * new Vector3(0f, 1f, 0f));
+            }
+        }
+    }
+
     public void HideUI() {
-        buttons.SetActive(false);
+        uiIsVisible = false;
+        //buttons.SetActive(false);
+    }
+
+    public void ShowUI() {
+        uiIsVisible = true;
     }
 
     public void StartClock() {

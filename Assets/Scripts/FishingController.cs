@@ -44,7 +44,9 @@ public class FishingController : MonoBehaviour {
     }
 
     void Update() {
-
+        if(Time.timeScale == 0) {
+            return;
+        }
         // transitions the rig that controls aim head between on and off
         // and allows for eating            
         if(state == "reeling" || state == "celebrating") {
